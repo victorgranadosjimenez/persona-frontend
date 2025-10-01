@@ -1,25 +1,7 @@
 
 # PersonaApp (FRONTEND)
 
-
-+---------------------+         HTTPS requests        +---------------------------+
-|                     | -------------------------->  |                           |
-|  Frontend           |                              |  Backend Spring Boot      |
-|  GitHub Pages       | <--------------------------  |  en Render                |
-|  (HTML/CSS/JS)      |       JSON responses         |                           |
-|                     |                              |  Conecta con PostgreSQL   |
-+---------------------+                              |  Database en Render       |
-                                                     +-----------+---------------+
-                                                                 |
-                                                                 | JDBC
-                                                                 v
-                                                     +---------------------------+
-                                                     |  PostgreSQL               |
-                                                     |  Database en Render       |
-                                                     |  persona_db_dh9c          |
-                                                     +---------------------------+
-
-
+![Imagen del proyecto](https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura3.JPG?raw=true)
 
 ![Imagen del proyecto](https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura1.JPG?raw=true)
 
