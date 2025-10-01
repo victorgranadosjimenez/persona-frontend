@@ -1,6 +1,9 @@
 
 # PersonaApp (FRONTEND)
-https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura1.JPG
+
+![Imagen del proyecto](https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura1.JPG?raw=true)
+
+
 
 ## Ejemplo en vivo
 https://victorgranadosjimenez.github.io/persona-frontend/
@@ -28,8 +31,9 @@ Estructurar una pequeña aplicación full stack con base de datos PostgreSQL en 
 ## Vista previa del proyecto
 Si quieres hechas un vistazo al proyecto, te recomiendo:
 
-https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura1.JPG
-https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura2.JPG
+![Captura del proyecto](https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura1.JPG?raw=true)
+![Captura del proyecto](https://raw.githubusercontent.com/victorgranadosjimenez/persona-frontend/refs/heads/main/Captura2.JPG?raw=true)
+
 
 ## Autor ✒️
 VÍCTOR GRANADOS JIMÉNEZ
