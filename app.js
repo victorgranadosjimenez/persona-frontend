@@ -1,7 +1,9 @@
-const API_URL = "http://localhost:8080/personas";
+// URL de tu backend en Render
+const API_URL = "https://persona-backend-8fgt.onrender.com/personas";
 
-
-//LOAD PERSONAS
+// ---------------------------------------------------
+// LOAD PERSONAS
+// ---------------------------------------------------
 async function loadPersonas() {
   try {
     const res = await fetch(API_URL);
@@ -28,7 +30,7 @@ async function loadPersonas() {
       const cardNumber = p.card?.number ?? "—";
 
       // Addresses: viene como array (ElementCollection)
-      const addressesArray = p.addresses ?? []; // puede ser [] o undefined
+      const addressesArray = p.addresses ?? [];
       const addressesText = addressesArray.length
         ? addressesArray.map(a => `${a.street ?? ""} ${a.houseNumber ?? ""} ${a.city ?? ""} ${a.postCode ?? ""}`.trim()).join(" • ")
         : (p.addressEmbedded ? `${p.addressEmbedded.street ?? ""} ${p.addressEmbedded.houseNumber ?? ""}`.trim() : "—");
@@ -48,10 +50,9 @@ async function loadPersonas() {
   }
 }
 
-
-
-
+// ---------------------------------------------------
 // Manejar formulario de añadir dirección
+// ---------------------------------------------------
 document.getElementById("address-form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -81,9 +82,8 @@ document.getElementById("address-form").addEventListener("submit", async (e) => 
       throw new Error(`Server ${res.status} ${res.statusText}: ${text}`);
     }
 
-    const updated = await res.json(); // tu controller devuelve la Person modificada
+    const updated = await res.json();
     alert("Dirección añadida correctamente.");
-    // opcional: mostrar la persona actualizada en consola
     console.log("Persona actualizada:", updated);
 
     // reset formulario y recargar lista
